@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <link rel="shortcut icon" href="http://av-test-challenge.org/images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gavin / https://github.com/Gavin-Hoang/ai-challenge">
+    
+    <meta name="keywords" content="deliverables">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+    <meta name="description" content="Develop specified simulation test scenarios and scripts for a specified route.
+    The major objective of this task is to prepare each team to get familiarized with LGSVL simulator and 
+    Baidu Apollo platform. Each team must select maps and vehicles provided by the LGSVL simulator, 
+    and generate six Python scenario scripts for selected six test sample scenarios listed in the 
+    following six categories. A simulation execution report (for scenario scripts) must be generated 
+    using the LGSVL simulator and submitted to the specified group fold in the given submission link.">
+    
+    <meta content="IEEE, Big Data Service 2021, big data conference, bigdata, California, U.S. " name="author">
+
+
+    <title>2021 IEEE AI Test Challenge - Home</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="deliverables_files/bootstrap.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Animation -->
+    <link rel="stylesheet" href="deliverables_files/animate.css">
+    <!-- Custom CSS -->
+    <link href="deliverables_files/theme.css" rel="stylesheet">
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="deliverables_files/responsive.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="deliverables_files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Elegant icon font -->
+    <link rel="stylesheet" href="deliverables_files/simple-line-icons.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script id="facebook-jssdk" src="deliverables_files/sdk.js"></script><script async="" src="deliverables_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128573272-1');
+    </script>
+    <script src="deliverables_files/settings.js"></script>
+    <link rel="stylesheet" type="text/css" href="deliverables_files/cookieconsent.css">
+    <script src="deliverables_files/cookieconsent.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise(json)
+        });
+    </script>
+
+<style></style></head>
+
+<body id="page-top" data-spy="scroll" ,="" onload="putLists()"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override-170793312 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">IEEE
+ websites place cookies on your device to give you the best user 
+experience. By using our websites, you agree to the placement of these 
+cookies. To learn more, read our <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.ieee.org/about/help/security_privacy.html" target="_blank">Privacy Policy.</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Accept &amp; Close</a></div><!--googleon: all--></div>
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Navigation -->
+
+<!-- nav-bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="deliverables_files/logo.PNG" width="100px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto h5">
+            <li class="nav-item active">
+                <a class="nav-link active" href="http://av-test-challenge.org/index.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://av-test-challenge.org/organisers.html"><i class="fas fa-user-friends"></i> Organization Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#importantDates"><i class="fas fa-calendar-day"></i> Important Dates</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-angle-double-up"></i> Training</a>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-pen"></i> Registration</a>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-check-circle"></i> Submission</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="http://av-test-challenge.org/results.html"><i class="far fa-sticky-note"></i> Results</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://av-test-challenge.org/sponsorships.html"><i class="far fa-sticky-note"></i>Sponsorships Level</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-hands-helping"></i> Sponsor</a>
+            </li> -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#"></a> <a class="dropdown-item" href="#">Another action</a> <div class="dropdown-divider"></div> <a class="dropdown-item" href="#">Something else here</a> </div> </li> -->
+        </ul>
+    </div>
+</nav>
+
+<!--  section slider start  -->
+<section id="section-slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slider-caption  text-center">
+                    <!-- <h2 class="slider-title">2021 IEEE Autonomous Driving AI Test Challenge</h2>
+                        <p style="font-size: 30px">Co-Sponsored by  
+                            
+                            <u><a href="http://ieeeaitests.com/" class="tital_a">IEEE AI Test Conference 2021</a></u>
+                        </p>
+                    
+                    <br>
+                    <p>Aug. 23-26, 2021<br>
+                        Online (Worldwide)
+                        </p> -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- main start -->
+<div class="row  container-fluid  mt-5">
+    <div class="col-md-9">
+        <div class="about-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="about-box">
+                <div class="about-inner">
+                    <h5>Share us</h5><br>
+                    <div class="addthis_inline_share_toolbox"></div><br>
+                    <hr>
+                    <!-- <h4>Sponsors</h4>
+                    <img src="images/sponsors2.png" alt="" class="img-responsive center-block">
+                    <img src="images/sponsors3.png" alt="" class="img-responsive center-block">
+                    <br><br>
+                    
+                    <hr> -->
+            
+                </div>
+            </div>
+        </div>
+
+        <div class="about-box col-lg-12 col-md-12 col-sm-12 col-xs-12 spacer">
+            <div class="about-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="about-box">
+                    <div class="about-inner">
+
+                        <div class="about-inner">
+                            <h5>Challenge Goals</h5>
+                            <p>
+                            Deliverable #1 - Demonstrate familiarity 
+with scripting of LGSVL Simulator and Baidu Apollo by creating basic 
+test scenarios.
+                            <br>
+                            Deliverable #2 - Generate a more diverse set
+ of AV simulation test scenarios and scripts using SVL Simulator and 
+Baidu Apollo.
+
+                            </p>
+                            
+                            <h5>Deliverables</h5>
+                            <p><b>Deliverable #1 </b> - Develop specified simulation test scenarios and scripts for a specified route. <br><br>
+                                The major objective of this task is to 
+prepare each team to get familiarized with LGSVL simulator and 
+                                Baidu Apollo autonomous driving 
+platform. Each team must select maps and vehicles provided by the LGSVL 
+simulator, 
+                                and generate six Python scenario scripts
+ for selected six test sample scenarios listed in the 
+                                following six categories. A simulation 
+execution report (for scenario scripts) must be generated 
+                                using the LGSVL simulator and submitted 
+to the specified group folder in the given submission link.
+                                <br><br>
+                                <b>Submission Requirements for Deliverable #1:</b> <br>
+                                -   	Scenarios and associated scripts <br>
+                                -   	Simulation execution report (Note 
+that “Test Results” are not available in LGSVL Simulator 2020.06 which 
+                                        was initially recommended for 
+deliverable #1, so this report is not required for deliverable #1. Teams
+ may 
+                                        instead choose to include any 
+interesting console output generated by the scenario script during the 
+execution 
+                                        of each scenario. If using SVL 
+Simulator 2021.1, a report may be generated by enabling the <a style="color:blue;" href="https://www.svlsimulator.com/docs/user-interface/web/simulations/#general">Create Test Report</a> 
+                                        option, printing the resulting <a style="color:blue;" href="https://www.svlsimulator.com/docs/user-interface/web/test-results/">Test Results</a> screen as a PDF and including that report.) <br>
+                                -   	Scenario demo videos (e.g. screen 
+capture video; submit link to YouTube, Google Drive, etc.) <br>
+                                -   	Selected scenario trip/route and 
+map information (e.g. which maps were used; include descriptions and/or 
+sketches of routes for ego and NPC trajectories)<br>
+                                -       A (written) simulation test 
+report, which documents the generated test scenario scripting methods, 
+and problem findings. <br>
+
+                                <br>
+                                <b>The six sample test scenarios will be selected from the following six categories.</b>
+
+                                <br>
+                                1. Perform lane change/low-speed merge <br>
+                                    </p><p>Note: You may wish to start 
+with (easier) scenario 2 (vehicle following) before attempting this one.
+ Because you can only give Apollo a destination to drive to, you cannot 
+specifically command it to change lanes or merge at a given time. You’ll
+ need to think of a way to encourage the ego vehicle to change lanes.
+                                    </p>
+                                <img src="deliverables_files/1.png" alt="" class="img-responsive center-block" width="200" height="200">
+                                <br><br>
+                                2. Perform vehicle following <br>
+                                <img src="deliverables_files/2.png" alt="" class="img-responsive center-block" width="120" height="200">
+                                <br><br>
+                                3. Move out of travel lane/park <br>
+                                <p>Note: While some versions of Apollo 
+support autonomous parking, this requires the use of special 
+parking-enabled maps and those are not available at this time. The goal 
+of this scenario, then, will be to set up the scenario with parked NPCs 
+and specify the source and destination for the parked ego vehicle as if 
+it were going to park there. This is similar to a unit test that is 
+written before the implementation is complete. The scenario will not be 
+penalized for unimplemented ego behavior.</p>
+                                <img src="deliverables_files/3.png" alt="" class="img-responsive center-block" width="200" height="300">
+                                <br><br>
+                                4. Detect and respond to school buses <br>
+                                <p>Note: Apollo does not currently 
+recognize or respond appropriately to school buses at this time. The 
+goal of this scenario, then, will be to set up the scenario with a 
+stopped school bus and specify the source and destination for the ego 
+vehicle. This is similar to a unit test that is written before the 
+implementation is complete. The scenario will not be penalized for 
+unimplemented ego behavior.</p>
+                                <img src="deliverables_files/4.png" alt="" class="img-responsive center-block" width="250" height="300">
+                                <br><br>
+                                5. Detect and respond to encroaching oncoming vehicles <br>
+                                <img src="deliverables_files/5.png" alt="" class="img-responsive center-block" width="150" height="300">
+                                <br><br>
+                                6. Detect and respond to pedestrians <br>
+                                <img src="deliverables_files/6.png" alt="" class="img-responsive center-block" width="150" height="300">
+                                <br><br>
+                                Reference: “A Framework for Automated Driving System Testable Cases and Scenarios” 
+                                The United States National Highway Traffic Safety Administration. <br>
+
+                                <a style="color:blue;" href="https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/documents/13882-automateddrivingsystems_092618_v1a_tag.pdf">https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/documents/13882-automateddrivingsystems_092618_v1a_tag.pdf</a>
+
+                            <p></p>
+
+                            <p><b>Deliverable #2 </b>  <br>
+                                Similar to AV road testing, AV 
+simulation testing is a very complex task due to the following 
+challenges: <br>
+                                &nbsp;&nbsp;- Lack of cost-effective automation tool for test scenario and script generation <br>
+                                &nbsp;&nbsp;- Lack of well-defined adequate validation standards and criteria <br>
+                                <br>
+                                The challenge task in the second phase 
+is to ask each team to do their best to select the map(s) and driving 
+                                route(s) to use effective approaches to 
+generate diverse AV simulation test scenarios and scripts. 
+                                There are two major objectives: a) 
+achieve good scenario diversity, and b) detect AV problems in the 
+simulation environment. 
+                                <br><br>
+                                During this phase, each team is going to
+ create and submit diverse simulation test scenarios and scripts 
+                                using effective approaches based on the 
+criteria listed in the “Evaluation Criteria” section. Teams can 
+                                create scenarios based on the reports 
+published by National Highway Traffic Safety Administration.
+                                <br><br>
+                                <b>Submission requirements for Deliverable #2:</b> <br>
+                                &nbsp;-  	Scenarios and associated scripts <br>
+                                &nbsp;-  	Simulation execution report 
+for all each scenario scripts script (With SVL Simulator 2021.1, a 
+report 
+                                is generated by enabling the <a style="color:blue;" href="https://www.svlsimulator.com/docs/user-interface/web/simulations/#general">Create Test Report</a> option, printing the resulting <a style="color:blue;" href="https://www.svlsimulator.com/docs/user-interface/web/test-results/">Test Results</a> screen as a PDF 
+                                and including that report.) <br>
+                                &nbsp;-  	Scenario demo videos(e.g. 
+screen capture video; submit link to YouTube, Google Drive, etc.)
+                                 <br>
+                                &nbsp;-  	Selected scenario trip/route 
+and map information (e.g. which maps were used; include descriptions 
+and/or sketches of routes for ego and NPC trajectories)
+                                <br>
+                                &nbsp;-  	A (written) simulation test 
+report, which documents the generated test scenarios, classes, scripting
+ methods, simulation test coverage, and problem findings. <br>
+
+                                <br>
+                                [1] Pre-Crash Scenario Typology for Crash Avoidance Research <br>
+                                <a style="color:blue;" href="https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/pre-crash_scenario_typology-final_pdf_version_5-2-07.pdf">https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/pre-crash_scenario_typology-final_pdf_version_5-2-07.pdf</a>
+
+                                <br>
+                                [2] A Framework for Automated Driving System Testable Cases and Scenarios <br>
+                                <a style="color:blue;" href="https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/documents/13882-automateddrivingsystems_092618_v1a_tag.pdf">https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/documents/13882-automateddrivingsystems_092618_v1a_tag.pdf</a>
+
+                            </p>
+            
+                            <br><br><br><br><br>
+                            <hr class="modal-hr">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- right bar start -->
+    <a class="anchor"></a>
+
+    <div class="col-md-3 p-0">
+        <div class="about-box py-3  col-md-12 spacer" style="background: #f6f5f4">
+            <p class="sub">&nbsp; &nbsp; &nbsp; Register for challenge</p>
+            <!--this is the submit button-->
+            <div class="d-flex justify-content-around">
+                <a id="submitButton" type="button" class="btn btn-xl submit-btn-background" target="_blank" ,="" onclick="alertFunction()">
+                    Register
+                </a>
+                <a id="submitButton" type="button" class="btn btn-xl submit-btn-background" target="_blank" ,="" onclick="">
+                    Submission
+                </a>
+            </div>
+        </div>
+
+        <div id="importantDates" class="container">
+
+            <div class="about-box px-5 py-2" style="background: #f6f5f4; margin-top: 0.5rem;">
+                <p class="sub">Dates</p>
+                <h4>Important Dates</h4>
+                <p>Registration deadline :
+                    <span class="orangeColor"><br><b>March 15 2021</b></span></p>
+
+                <p>Training, preparation starts:
+                    <span class="orangeColor"><br><b>February 2021</b></span>
+                </p>
+                <p>First phase challenge submission:
+                    <span class="orangeColor"><br><b>April 30 2021</b></span>
+                </p>
+                <p>Notification of selected teams :
+                    <span class="orangeColor"><br><b>May 15 2021</b></span>
+                </p>
+                <p>Second phase challenge submission:
+                    <span class="orangeColor"><br><b>July 15 2021</b></span>
+                </p>
+                <p>Paper submission:
+                    <span class="orangeColor"><br><b>July 15 2021</b></span>
+                </p>
+                <p>AI Test Conference presentations
+                    <span class="orangeColor"><br><b>August 23 2021</b></span>
+                </p>
+                <p>Announcement of winners:
+                    <span class="orangeColor"><br><b>August 2021</b></span>
+                </p>
+            </div>
+            <!-- <div class="about-box col-lg-12 col-md-12 col-sm-12 col-xs-12 spacer sponsors" style="background: #f6f5f4">
+                <p class="sub">Sponsors</p>
+                <h4>Sponsored By</h4>
+                <img src="images/ieeeSponsor.png" alt="" class="img-responsive center-block">
+            </div> -->
+            <div class="about-box px-5 py-2 spacer" style="background: #f6f5f4">
+                <p class="sub">Contacts</p>
+                <h4>Contacts:</h4>
+                <p>
+                    Jerry Gao<br>
+                    <a href="mailto:Jerry.Gao@sjsu.edu" class="blueColor">Jerry.Gao@sjsu.edu</a><br>
+                    <br>Wencen Wu<br>
+                    <a href="mailto:wencen.wu@sjsu.edu" class="blueColor">wencen.wu@sjsu.edu</a><br>
+                    <br>Oum-El-Kheir Aktouf<br>
+                    <a href="mailto:oum-el-kheir.aktouf@lcis.grenoble-inp.fr" class="blueColor">oum-el-kheir.aktouf@lcis.grenoble-inp.fr</a><br>
+                </p>
+                
+                <p>
+                </p><hr>
+                <!-- <b class="semi-focus">About challenge:</b><br>Jerry Gao<br>
+                <a href="mailto:Jerry.Gao@sjsu.edu" class="blueColor">Jerry.Gao@sjsu.edu</a><br>
+                <br>Fan Jing Meng<br>
+                <a href="mailto:mengfj@cn.ibm.com" class="blueColor">mengfj@cn.ibm.com</a><br>
+                <hr>
+                <b class="semi-focus">About Program:</b><br>Iraklis Varlamis<br>
+                <a href="mailto:varlamis@hua.gr" class="blueColor">varlamis@hua.gr</a><br>
+                <br>Magdalini Eirinaki<br>
+                <a href="mailto:magdalini.eirinaki@sjsu.edu" class="blueColor">magdalini.eirinaki@sjsu.edu</a><br>
+                <br>Paul Townend<br>
+                <a href="mailto:paul.townend@edgetic.com" class="blueColor">paul.townend@edgetic.com</a><br>
+                <hr>
+                <b class="semi-focus">About Demos/Special Tracks:</b><br>Katerina Potika<br>
+                <a href="mailto:katerina.potika@sjsu.edu" class="blueColor">katerina.potika@sjsu.edu</a><br>
+                <hr>
+                <b class="semi-focus">Proceedings Chair:</b><br>Guoyan Xu<br>
+                <a href="mailto:guoyan.xu@sjsu.edu" class="blueColor">guoyan.xu@sjsu.edu</a><br>
+                <hr> -->
+                <b class="semi-focus">About Website:</b><br>Everette Li<br>
+                <a href="mailto:everetteli12@gmail.com" class="blueColor">everetteli12@gmail.com</a><br>
+                <b class="semi-focus"></b><br>Zizhen Huang<br>
+                <a href="mailto:zizhen.huang@sjsu.edu" class="blueColor">zizhen.huang@sjsu.edu</a><br>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- section footer start -->
+<footer>
+    <section id="section-footer">
+        <div class="container
+            &lt;div class=" row="" "="">
+        <div class="col-md-12">
+            <div class="section-footer-btm text-center">
+                <p>Copyright © IEEE BIG DATA SERVICE 2021</p>
+            </div>
+        </div>
+    </div></section>
+</footer>
+
+<script src="deliverables_files/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="deliverables_files/bootstrap.js"></script>
+<!-- jQuery -->
+<script src="deliverables_files/jquery_003.js"></script>
+<!-- Plugin JavaScript -->
+<!-- masonary -->
+<script src="deliverables_files/masonry.js" type="text/javascript"></script>
+<!-- easing  -->
+<script src="deliverables_files/jquery_002.js"></script>
+<!-- waypoint -->
+<script type="text/javascript" src="deliverables_files/jquery_004.js"></script>
+<!-- Wow Animation -->
+<script type="text/javascript" src="deliverables_files/wow.js"></script>
+
+<!--Custom Theme JavaScript-->
+<script src="deliverables_files/theme.js"></script>
+<script src="deliverables_files/listItemFiller.js"></script>
+<script>
+    function alertFunction() {
+        //alert("Coming Soon!");
+        location.href = 'https://www.eventbrite.com/e/2021-ieee-autonomous-driving-ai-test-challenge-tickets-136750395113';
+    }
+</script>
+<script>
+    function bgGray(x) {
+        x.style.backgroundColor = '#BEBEBE';
+    }
+</script>
+<script>
+    function bgWhite(x) {
+        x.style.backgroundColor = '#FFF';
+    }
+</script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="deliverables_files/addthis_widget.js"></script>
+
+
+</body></html>

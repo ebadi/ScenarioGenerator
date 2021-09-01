@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <link rel="shortcut icon" href="http://av-test-challenge.org/images/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="everette_li / https://everetteli.com">
+    <meta name="author" content="lq3297401 / https://github.com/lq3297401">
+    <meta name="author" content="Gavin / https://github.com/Gavin-Hoang/ai-challenge">
+    <!-- <meta name="keywords" content="AI Testing">
+    <meta name="keywords" content="2021 IEEE AI Test Challenge">
+    <meta name="keywords" content="IEEE AI Test Challenge 2021"> -->
+    <meta name="keywords" content="2021 IEEE Autonomous Driving AI Test Challenge">
+    <!-- <meta name="keywords" content="IEEE AV AI Test Challenge 2021">
+    <meta name="keywords" content="IEEE Challenge">
+    <meta name="keywords" content="Driverless Car Challenge">
+    <meta name="keywords" content="AI Testing Conference">
+    <meta name="keywords" content="AV Challenge">
+    <meta name="keywords" content="Testing autonomous driving vehicles"> -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <meta name="keywords" content="IEEE, Big, Data, Challenge, AI, Test, Autonomous, Driverless, 2021, big, data, conference, bigdata, IEEE Conference 2021, 2021 Conferences, Conferences in USA, Conferences in Silicon Valley "/> -->
+    <meta name="description" content="Testing autonomous driving vehicles refers to a quality assurance process in which diverse validation activities are 
+    performed based on well-defined quality assurance standards and assessment criteria. In a quality validation process, unmanned autonomous 
+    driving vehicles are validated at different levels (component, integration, and system) based on the pre-defined quality requirements to assure 
+    system quality in algorithms, functions, components, behaviors, connectivity, sensing, performance, intelligence, and decision-making in diverse 
+    contexts and conditions. To reduce the cost and increase the testing efficiency in the autonomous driving industry, simulation testing receives 
+    increasing attention and effort in recent years. A high-fidelity simulation software usually contains the mathematical representations of the environment, 
+    the dynamics of autonomous vehicles and surrounding vehicles, the sensors models, etc., at different levels, and is needed to facilitate the testing and 
+    development of autonomous driving systems. In order to perform efficient simulation testing, techniques for optimizing and accelerating testing processes 
+    are in great demand.">
+
+    <meta name="description" content="2021 IEEE Autonomous Driving AI Test Challenge">
+    <!-- <meta name="description" content="2021 IEEE AI Test Challenge">
+    <meta name="description" content="IEEE AI Test Challenge 2021">
+    <meta name="description" content="IEEE AV AI Test Challenge 2021">
+    <meta name="description" content="IEEE Challenge">
+    <meta name="description" content="Driverless Car Challenge">
+    <meta name="description" content="AI Testing Conference">
+    <meta name="description" content="AV Challenge">
+    <meta name="description" content="Testing autonomous driving vehicles">  -->
+
+    <meta name="author" content="IEEE, Big Data Service 2021, big data conference, bigdata, California, U.S.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2021 IEEE AI Test Challenge - Home</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="test-challenge-2021_files/bootstrap.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Animation -->
+    <link rel="stylesheet" href="test-challenge-2021_files/animate.css">
+    <!-- Custom CSS -->
+    <link href="test-challenge-2021_files/theme.css" rel="stylesheet">
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="test-challenge-2021_files/responsive.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="test-challenge-2021_files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Elegant icon font -->
+    <link rel="stylesheet" href="test-challenge-2021_files/simple-line-icons.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script id="facebook-jssdk" src="test-challenge-2021_files/sdk.js"></script><script async="" src="test-challenge-2021_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128573272-1');
+    </script>
+    <script src="test-challenge-2021_files/settings.js"></script>
+    <link rel="stylesheet" type="text/css" href="test-challenge-2021_files/cookieconsent.css">
+    <script src="test-challenge-2021_files/cookieconsent.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise(json)
+        });
+    </script>
+
+<style></style></head>
+
+<body id="page-top" data-spy="scroll" ,="" onload="putLists()"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override-170793312 cc-invisible" style="display: none;"><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">IEEE
+ websites place cookies on your device to give you the best user 
+experience. By using our websites, you agree to the placement of these 
+cookies. To learn more, read our <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.ieee.org/about/help/security_privacy.html" target="_blank">Privacy Policy.</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Accept &amp; Close</a></div><!--googleon: all--></div>
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Navigation -->
+
+<!-- nav-bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="test-challenge-2021_files/logo.PNG" width="100px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto h5">
+            <li class="nav-item active">
+                <a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://av-test-challenge.org/organisers.html"><i class="fas fa-user-friends"></i> Organization Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#importantDates"><i class="fas fa-calendar-day"></i> Important Dates</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-angle-double-up"></i> Training</a>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-pen"></i> Registration</a>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-check-circle"></i> Submission</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="http://av-test-challenge.org/results.html"><i class="far fa-sticky-note"></i> Results</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://av-test-challenge.org/sponsorships.html"><i class="far fa-sticky-note"></i>Sponsorships Level</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-hands-helping"></i> Sponsor</a>
+            </li> -->
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#"></a> <a class="dropdown-item" href="#">Another action</a> <div class="dropdown-divider"></div> <a class="dropdown-item" href="#">Something else here</a> </div> </li> -->
+        </ul>
+    </div>
+</nav>
+
+<!--  section slider start  -->
+<section id="section-slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slider-caption  text-center">
+                    <!-- <h2 class="slider-title">2021 IEEE Autonomous Driving AI Test Challenge</h2>
+                        <p style="font-size: 30px">Co-Sponsored by  
+                            
+                            <u><a href="http://ieeeaitests.com/" class="tital_a">IEEE AI Test Conference 2021</a></u>
+                        </p>
+                    
+                    <br>
+                    <p>Aug. 23-26, 2021<br>
+                        Online (Worldwide)
+                        </p> -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- main start -->
+<div class="row  container-fluid  mt-5">
+    <div class="col-md-9">
+        <div class="about-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="about-box">
+                <div class="about-inner">
+                    <h5>Share us</h5><br>
+                    <div class="addthis_inline_share_toolbox"></div><br>
+                    <!-- <video width="860" height="340" controls>
+                        <source src="./images/AutoV.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video> -->
+                    <hr>
+                    <!-- <h4>Sponsors</h4>
+                    <img src="images/sponsors2.png" alt="" class="img-responsive center-block">
+                    <img src="images/sponsors3.png" alt="" class="img-responsive center-block">
+                    <br><br> -->
+                    <h4>Announcement:</h4>
+                    <p>
+                        - The 2021 IEEE Autonomous Driving AI Test Challenge
+                        is now an <b class="orangeColor">online only event</b>. It will take place from <b class="orangeColor">23<sup>rd</sup> August to 26<sup>th</sup> August</b> <br>
+                        - Please check for all training <a style="color:blue;" href="http://av-test-challenge.org/meetings.html">recordings and slides</a>  <br>
+                        - Click to See <a style="color:blue;" href="http://av-test-challenge.org/deliverables.html">Deliverables</a> <br>
+                        - <b>IMPORTANT</b>: <br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp; We would also like to remind you that the <b>submissions are accepted through GitHub (NOT via website)</b>. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; We have sent submission
+ instructions to all registered teams via emails. If you registered but 
+have not received the instructions, <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; please let us know ASAP by sending emails to avtest2021@gmail.com <br>
+                        - <b>Deadline</b>: <br> 
+                            <b>&nbsp;&nbsp;Deliverable#1 extended to 05/17/2021, 11:59pm PST</b>. <br>
+                            <b>&nbsp;&nbsp;Deliverable#2 extended to 07/23/2021, 11:59pm PST</b>.
+                    </p>
+                    <hr>
+                    <p class="sub">news</p>
+                    <h4>Latest News:</h4>
+                    <p>
+                        <b class="orangeColor">Aug. 8 2021:</b><br>
+                        The review of all the submissions has been completed and 
+                        the winners of the challenge will be announced during the 
+                        conference on <b>August 23</b>. The schedule of the presentation 
+                        sessions/winners announcement will be out soon
+                    </p>
+                    <p>
+                        <b class="orangeColor">Mar. 24 2021:</b><br>
+                        We are going to host the first Q&amp;A / demo sessions on March 26 / March 27 and April 9/10. 
+                        Please click the <a style="color:blue;" class="nav-link" href="#demoDetails">details</a>
+                    </p>
+                    <p>
+                        <b class="orangeColor">Oct. 26 2020:</b><br>
+                        Please check the the new <b class="semi-focus orangeColor">Announcement</b> on participating the
+                        online challenges.
+                        For further details about the online challenges, please take a look at the <b class="semi-focus orangeColor">online venue page</b>.
+                        <br>
+                        <a onclick="alertFunction()" target="_blank" type="button" class="btn btn-xs center-block">Online Venue
+                        </a>
+                    </p>
+                        <hr>
+                    <h4>How it might look</h4>
+                        <video controls="controls" width="860" height="340">
+                        <source src="test-challenge-2021_files/AutoV.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <br><br>
+
+                    <h4>Sponsors</h4>
+                    <img src="test-challenge-2021_files/sponsors2.png" alt="" class="img-responsive center-block">
+                    <img src="test-challenge-2021_files/sponsors3.png" alt="" class="img-responsive center-block">
+                    <br><br>
+
+                    <br>
+                    <hr id="callForPaper">
+                </div>
+            </div>
+        </div>
+
+        <div class="about-box col-lg-12 col-md-12 col-sm-12 col-xs-12 spacer">
+            <div class="about-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="about-box">
+                    <div class="about-inner">
+
+                        <div class="about-inner">
+                            
+                            <h4 style="text-align:center">2021 IEEE Autonomous Driving AI Test Challenge </h4>
+                               <h4 style="text-align:center">Sponsored by IEEE AI Test Conference 2021</h4>
+                            
+                            <!--  NOTE: each h5 tag is the title of the entire content         -->
+
+                            <h5>Introduction:</h5>
+                            <p>Testing autonomous driving vehicles refers to a quality assurance process in which diverse
+                                validation activities are performed based on well-defined quality assurance standards and
+                                assessment criteria. In a quality validation process, unmanned autonomous driving vehicles are
+                                validated at different levels (component, integration, and system) based on the pre-defined
+                                quality requirements to assure system quality in algorithms, functions, components, behaviors,
+                                connectivity, sensing, performance, intelligence, and decision-making in diverse contexts and
+                                conditions. To reduce the cost and increase the testing efficiency in the autonomous driving
+                                industry, simulation testing receives increasing attention and effort in recent years. A
+                                high-fidelity simulation software usually contains the mathematical representations of the
+                                environment, the dynamics of autonomous vehicles and surrounding vehicles, the sensors
+                                models, etc., at different levels, and is needed to facilitate the testing and development of
+                                autonomous driving systems. In order to perform efficient simulation testing, techniques for
+                                optimizing and accelerating testing processes are in great demand.
+                            </p>
+                            <p>This challenge is set up as a platform to address this demand, and advocate the importance and
+                                need of quality validation and automation for autonomous driverless cars. This platform provides
+                                a global competition opportunity for international student teams and professional teams to
+                                develop diverse simulation testing techniques and approaches in test scenario generation and
+                                automation.
+                            </p>
+                            <h5>Simulation environment:</h5>
+                            <p>
+                                In this challenge, LGSVL simulator will 
+be used to support simulation testing and execution.
+                                LGSVL simulator is a Unity-based 
+autonomous vehicle simulator developed by LG Electronics
+                                America R&amp;D Center. The LGSVL 
+simulator can generate various realistic 3D environments by
+                                adjusting environmental parameters 
+including maps, weather, traffic, and pedestrians. It can also
+                                simulate different sensor outputs, 
+including camera, Lidar, radar, ultrasonic, etc., and lots of
+                                virtual sensors to generate ground truth
+ data (e.g. depth, semantic/instance segmentation, 2D/3D
+                                bounding box, etc.). Users can generate 
+and test arbitrary edge case scenarios and simulate
+                                billions of miles. LGSVL simulator is 
+fully integrated with the open-source platforms Baidu
+                                Apollo and Autoware. In this challenge, 
+teams will use LGSVL integrated with Baidu Apollo to
+                                generate and evaluate test cases.
+                            </p>
+                            <p>
+                                The details about LGSVL could be found in the following URLs:
+                                <br>
+                                <a style="color:blue;" href="https://www.lgsvlsimulator.com/">https://www.lgsvlsimulator.com/</a>
+                                <br>
+                                <a style="color:blue;" href="https://www.lgsvlsimulator.com/docs/">https://www.lgsvlsimulator.com/docs/</a>
+                            </p>
+                            <h5>AV Simulation Test Challenge:</h5>
+                            <p>The challenge consists of two phases:</p>
+                            <p>1. <b>Training and team selection</b>. During this phase, training materials including tutorial
+                                videos, documents, and online Q&amp;A sessions will be delivered to the teams so that the
+                                teams will get familiar with LGSVL simulator.
+                                <br>
+                                Available training materials:
+                                <br>
+                                <a style="color:blue;" href="https://www.youtube.com/watch?v=Ucr0aM334_k"> &gt; Tutorial: End-to-end video tutorial of LGSVL simulator with Apollo driving</a>
+                                <br>
+                                <a style="color:blue;" href="https://www.lgsvlsimulator.com/docs/getting-started/"> &gt; Getting started with LGSVL simulator</a>
+                                <br>
+                                <a style="color:blue;" href="https://www.youtube.com/playlist?list=PL8Ql2_5rYPjgEygg5rDm7DSHWbGmVqYF5"> &gt; Getting started with Baidu Apollo</a>
+                                <br>
+                                <a style="color:blue;" href="https://exactpro.com/events/external/software-testing-complex-intelligent-systems-and-autonomous-vehicles"> &gt; Online course on Software Testing for Complex Intelligent Systems and Autonomous Vehicles, video list</a>
+                                <br>
+                                
+                                </p><div id="demoDetails" class="container">
+                                    <p> <b>Two Q&amp;A / demo sessions details</b> <br>
+                                        (1) March 26, 2021 from 5pm - 6:30pm PST <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 27, 2021 from 9am - 10:30am PST)
+                                            <br>
+                                        (2) April 9, 2021 at 5pm - 6:30pm PST  <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;April 10, 2021 at 9am - 10:30am PST
+                                        <br>
+                                        Please check for all the Zoom <a style="color:blue;" href="http://av-test-challenge.org/meetings.html">links and recordings</a> 
+                                    </p> 
+                                </div>
+                                
+                            <p></p>
+
+                            <p>2. <b>Competition</b>. During this phase, teams use the traffic accident/crash database to create scenarios, automation scripts, 
+                                and UI and submit them for evaluation.
+                                <br>
+                                <!-- <a href="https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/pre-crash_scenario_typology-final_pdf_version_5-2-07.pdf">[1] https://www.nhtsa.gov/sites/nhtsa.dot.gov/files/pre-crash_scenario_typology-final_pdf
+                                    _version_5-2-07.pdf</a>
+                                <br>
+                                <a href="https://www.nhtsa.gov/research-data/databases-and-software">[2] https://www.nhtsa.gov/research-data/databases-and-softwar</a> -->
+                            </p>
+                            <h5>Challenge Tasks for Each Team:</h5>
+                            <p> <b>1.</b> Form a team and make your challenge registration via specified challenge platform. Each
+                                team can have up to 6 members.
+                                <br>
+                                <b>2.</b> Attend challenge training sessions
+                                <br>
+                                <b>3.</b> Work and submit the first 
+phase deliverable. Each team needs to work on deliverable #1 and submit 
+the following 
+                                    artifacts for each scenario to the 
+team’s submission folder in the given challenge submission link. <br>
+                                    <b>--</b> Scenarios and associated scripts <br>
+                                    <b>--</b> Simulation execution 
+report (Note that “Test Results” are not available in LGSVL Simulator 
+2020.06 which 
+                                      was initially recommended for 
+deliverable #1, so this report is not required for deliverable #1. Teams
+ may instead choose 
+                                      to include any interesting console
+ output generated by the scenario script during the execution 
+                                      of each scenario. If using SVL 
+Simulator 2021.1, a report may be generated by enabling the <a style="color:blue;" href="https://www.svlsimulator.com/docs/user-interface/web/simulations/#general">Create Test Report</a> option, 
+                                      printing the resulting <a style="color:blue;" href="https://www.svlsimulator.com/docs/user-interface/web/test-results/">Test Results</a> screen as a PDF and including that report.) <br>
+                                    <b>--</b> Scenario demo videos (e.g. screen capture video; submit link to YouTube, Google Drive, etc.) <br>
+                                    <b>--</b> Selected scenario 
+trip/route and map information (e.g. which maps were used; include 
+descriptions and/or sketches of routes for ego and NPC trajectories) <br>
+                                    <b>--</b> A (written) simulation test report, which documents the generated test scenario scripting methods, and problem findings. <br>
+
+                                <b>4.</b> Work and submit the second 
+phase deliverable. Each team needs to work on deliverable #2 and submit 
+your challenge project artifacts 
+                                (same as before, listed above) for each 
+scenario to the team’s submission folder in the given challenge 
+submission link.
+
+                                <br>
+                                <b>5.</b> Final challenge demo and evaluation for selected final teams (for the selected final teams).
+                                <br>
+                                <b>6.</b> Final paper submission and presentation for selected final teams (for the selected final teams).
+                                <br><br>
+                                
+                                <a style="color:blue;" href="http://av-test-challenge.org/deliverables.html">Click to See Deliverables</a>
+                                
+                            </p>
+                            <h5>Challenge Evaluations:</h5>
+                            <p>The results will be evaluated based on <br>
+                                1) Test simulation automation in test simulation modeling, auto-script generation,
+                                auto-result validation, auto-coverage analysis, and auto-report
+                                <br>
+                                2) Models and methodology
+                                <br>
+                                3) Simulation demos based on specified routes, scenarios, and rules
+                                <br>
+                                4) The number of test simulation scenarios
+                                <br><br>
+                                <b>The submissions will be evaluated based on the following criteria:</b>
+                                <br>
+                            </p>
+
+                            <h5>AV Test Simulation Generation – Evaluation Criteria</h5>
+                            <p>This evaluation criteria listed below provides detailed assessment rubrics for AV test simulation
+                                scenario generation and script generation from different teams.
+                            </p>
+                            <img src="test-challenge-2021_files/SimulationGeneration.png" alt="" class="img-responsive center-block">
+                            <br><br>
+                            
+                            <h5>AV Test Simulation Demo – Evaluation Criteria</h5>
+                            <p>This evaluation criteria listed below provides detailed assessment rubrics for challenge demos given from different teams.</p>
+                            <img src="test-challenge-2021_files/SimulationDemo.png" alt="" class="img-responsive center-block">
+                            <br><br>
+                            
+                            <h5>Challenge Organization Platform</h5>
+                            <p>Github</p>
+                            
+                            <h5>Getting Started with LGSVL:</h5>
+                            <p>
+                                The instructions on how to get started 
+with LGSVL and Apollo including the system requirements can be found at 
+                                <a style="color:blue;" href="https://www.lgsvlsimulator.com/docs/getting-started/">https://www.lgsvlsimulator.com/docs/getting-started/</a> 
+                                and <a style="color:blue;" href="https://github.com/ApolloAuto/apollo">https://github.com/ApolloAuto/apollo</a>. 
+                                Each team must have local machines running LGSVL Simulator and Apollo. 
+
+
+                                <br><br>
+                                LGSVL cloud will be used to run 
+scenarios by judges for verification. LGSVL cloud can run LGSVL 
+Simulator, 
+                                Apollo ad stack, and scenario/Python 
+scripts. However, users can only view the visualization of recorded 
+                                data and can see an analysis report of 
+all the simulations after simulations are finished.                     
+           
+                                </p>
+                            
+                            <h5>Cloud support:</h5>
+                            <p>Amazon AWS cloud environment</p>
+                            
+                            
+                            <h5>Challenge Awards: ($10K)</h5>
+                            <p>- First place team ($5K) <br>
+                                - Second place team ($3K) <br>
+                                - 2 Third place teams ($2K, each with 1K)</p>
+                            
+                            <hr>
+            
+                            <br><br><br><br><br>
+                            <hr class="modal-hr">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- right bar start -->
+    <a class="anchor"></a>
+
+    <div class="col-md-3 p-0">
+        <div class="about-box py-3  col-md-12 spacer" style="background: #f6f5f4">
+            <p class="sub">&nbsp; &nbsp; &nbsp; Register for challenge</p>
+            <!--this is the submit button-->
+            <div class="d-flex justify-content-around">
+                <a id="submitButton" type="button" class="btn btn-xl submit-btn-background" target="_blank" ,="" onclick="alertFunction()">
+                    Register
+                </a>
+                <!-- <a id="submitButton" type="button" class="btn btn-xl submit-btn-background" target="_blank" ,
+                   onclick="">
+                    Submission
+                </a> -->
+            </div>
+        </div>
+
+        <div id="importantDates" class="container">
+
+            <div class="about-box px-5 py-2" style="background: #f6f5f4; margin-top: 0.5rem;">
+                <p class="sub">Dates</p>
+                <h4>Important Dates</h4>
+                <p>Registration deadline :
+                    <span class="orangeColor"><br><b>March 15 2021</b></span></p>
+
+                <p>Training, preparation starts:
+                    <span class="orangeColor"><br><b>March 2021</b></span>
+                </p>
+                <p>First phase challenge submission:
+                    <span class="orangeColor"><br><b>May 7 2021</b></span>
+                </p>
+                <p>Notification of selected teams :
+                    <span class="orangeColor"><br><b>May 15 2021</b></span>
+                </p>
+                <p>Second phase challenge submission:
+                    <span class="orangeColor"><br><b>July 15 2021</b></span>
+                </p>
+                <p>Paper submission:
+                    <span class="orangeColor"><br><b>July 23 2021</b></span>
+                </p>
+                <p>Complete review and notification:
+                    <span class="orangeColor"><br><b>August 06 2021</b></span>
+                </p>
+                <p>AI Test Conference presentations
+                    <span class="orangeColor"><br><b>August 23 2021</b></span>
+                </p>
+                <p>Announcement of winners:
+                    <span class="orangeColor"><br><b>August 2021</b></span>
+                </p>
+            </div>
+            <!-- <div class="about-box col-lg-12 col-md-12 col-sm-12 col-xs-12 spacer sponsors" style="background: #f6f5f4">
+                <p class="sub">Sponsors</p>
+                <h4>Sponsored By</h4>
+                <img src="images/ieeeSponsor.png" alt="" class="img-responsive center-block">
+            </div> -->
+            <div class="about-box px-5 py-2 spacer" style="background: #f6f5f4">
+                <p class="sub">Contacts</p>
+                <h4>Contacts:</h4>
+                <p>
+                    Jerry Gao<br>
+                    <a href="mailto:Jerry.Gao@sjsu.edu" class="blueColor">Jerry.Gao@sjsu.edu</a><br>
+                    <br>Wencen Wu<br>
+                    <a href="mailto:wencen.wu@sjsu.edu" class="blueColor">wencen.wu@sjsu.edu</a><br>
+                    <br>Oum-El-Kheir Aktouf<br>
+                    <a href="mailto:oum-el-kheir.aktouf@lcis.grenoble-inp.fr" class="blueColor">oum-el-kheir.aktouf@lcis.grenoble-inp.fr</a><br>
+                </p>
+                
+                <p>
+                </p><hr>
+                <!-- <b class="semi-focus">About challenge:</b><br>Jerry Gao<br>
+                <a href="mailto:Jerry.Gao@sjsu.edu" class="blueColor">Jerry.Gao@sjsu.edu</a><br>
+                <br>Fan Jing Meng<br>
+                <a href="mailto:mengfj@cn.ibm.com" class="blueColor">mengfj@cn.ibm.com</a><br>
+                <hr>
+                <b class="semi-focus">About Program:</b><br>Iraklis Varlamis<br>
+                <a href="mailto:varlamis@hua.gr" class="blueColor">varlamis@hua.gr</a><br>
+                <br>Magdalini Eirinaki<br>
+                <a href="mailto:magdalini.eirinaki@sjsu.edu" class="blueColor">magdalini.eirinaki@sjsu.edu</a><br>
+                <br>Paul Townend<br>
+                <a href="mailto:paul.townend@edgetic.com" class="blueColor">paul.townend@edgetic.com</a><br>
+                <hr>
+                <b class="semi-focus">About Demos/Special Tracks:</b><br>Katerina Potika<br>
+                <a href="mailto:katerina.potika@sjsu.edu" class="blueColor">katerina.potika@sjsu.edu</a><br>
+                <hr>
+                <b class="semi-focus">Proceedings Chair:</b><br>Guoyan Xu<br>
+                <a href="mailto:guoyan.xu@sjsu.edu" class="blueColor">guoyan.xu@sjsu.edu</a><br>
+                <hr> -->
+                <b class="semi-focus">About Website:</b><br>Everette Li<br>
+                <a href="mailto:everetteli12@gmail.com" class="blueColor">everetteli12@gmail.com</a><br>
+                <b class="semi-focus"></b><br>Zizhen Huang<br>
+                <a href="mailto:zizhen.huang@sjsu.edu" class="blueColor">zizhen.huang@sjsu.edu</a><br>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- section footer start -->
+<footer>
+    <section id="section-footer">
+        <div class="container
+            &lt;div class=" row="" "="">
+        <div class="col-md-12">
+            <div class="section-footer-btm text-center">
+                <p>Copyright © IEEE BIG DATA SERVICE 2021</p>
+            </div>
+        </div>
+    </div></section>
+</footer>
+
+<script src="test-challenge-2021_files/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="test-challenge-2021_files/bootstrap.js"></script>
+<!-- jQuery -->
+<script src="test-challenge-2021_files/jquery_003.js"></script>
+<!-- Plugin JavaScript -->
+<!-- masonary -->
+<script src="test-challenge-2021_files/masonry.js" type="text/javascript"></script>
+<!-- easing  -->
+<script src="test-challenge-2021_files/jquery_002.js"></script>
+<!-- waypoint -->
+<script type="text/javascript" src="test-challenge-2021_files/jquery_004.js"></script>
+<!-- Wow Animation -->
+<script type="text/javascript" src="test-challenge-2021_files/wow.js"></script>
+
+<!--Custom Theme JavaScript-->
+<script src="test-challenge-2021_files/theme.js"></script>
+<script src="test-challenge-2021_files/listItemFiller.js"></script>
+<script>
+    function alertFunction() {
+        //alert("Coming Soon!");
+        location.href = 'https://www.eventbrite.com/e/2021-ieee-autonomous-driving-ai-test-challenge-tickets-136750395113';
+    }
+</script>
+<script>
+    function bgGray(x) {
+        x.style.backgroundColor = '#BEBEBE';
+    }
+</script>
+<script>
+    function bgWhite(x) {
+        x.style.backgroundColor = '#FFF';
+    }
+</script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="test-challenge-2021_files/addthis_widget.js"></script>
+
+
+</body></html>

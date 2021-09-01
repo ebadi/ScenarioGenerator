@@ -1,0 +1,188 @@
+/* Responsive styles
+================================================== */
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1200px) {
+    .dropdown i{
+        display: none;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+@media (min-width : 992px) {
+    .navbar-brand i{
+        margin-right: 0px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media (min-width : 768px) and (max-width: 991px) {
+
+    .navbar-custom{
+        padding: 10px 0px;
+    }
+    .nav > li > a {
+        position: relative;
+        display: block;
+        padding: 16px 9px;
+    }
+
+    .navbar-brand i{
+        margin-right: 0px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .section-head p {
+        width: 100%;
+    }
+
+    /*=== Slider============================*/
+    .slider-caption {
+        padding: 120px 0px 90px;
+    }
+
+
+
+    /*Counter===============*/
+    .counter-text{
+        margin-bottom: 30px;
+    }
+    /*== service ========*/
+    .service-box{
+        padding: 20px 10px;
+    }
+    /*=====feature========*/
+
+    .feature-box{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+
+    /*==== portfolio=====*/
+    .content-box{
+        display: block;
+    }
+    .portfolio-desc a{
+        float: none;
+    }
+    /*footer========================================*/
+
+    .footer-box {
+        margin-bottom: 30px;
+    }
+
+
+
+}
+
+/* Small Devices Potrait */
+@media (max-width : 767px){
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media (min-width : 480px) and (max-width:767px){
+
+
+    .navbar-default .navbar-nav > li > a {
+        padding: 8px 16px;
+    }
+
+
+    /* Main  Slider==============================*/
+    .slider-caption {
+        width: 100%;
+    }
+    .slider-caption a.btn{
+        margin-bottom: 10px;
+    }
+
+    /*===ABout ===============*/
+
+
+    /*=========feature========*/
+    .feature-box {
+        margin-bottom: 30px;
+    }
+
+    .paralax-content{
+        margin-bottom: 20px;
+    }
+    /*===== PRICING=========*/
+
+    .pricing-box{
+        margin-bottom: 30px;
+    }
+
+    .contact-head {
+        margin-top: 40px;
+    }
+
+    /*footer========================================*/
+
+
+    .footer-box {
+        margin-top: 30px;
+    }
+
+
+}
+
+/* Custom, iPhone Retina */
+@media (min-width : 320px) and (max-width: 478px)  {
+
+
+    .navbar-default .navbar-nav > li > a {
+        padding: 8px 16px;
+    }
+
+
+
+    /* Main  Slider==============================*/
+
+    .slider-caption h2.slider-title {
+        font-size: 35px;
+        line-height: 55px;
+    }
+    .slider-caption p{
+        width: 100%;
+        font-size: 14px;
+    }
+    .slider-caption a.btn{
+        margin-bottom: 10px;
+    }
+
+    /*===ABout ===============*/
+
+    /*=========feature========*/
+    .feature-box {
+        margin-bottom: 30px;
+    }
+
+    .paralax-content{
+        margin-bottom: 20px;
+    }
+    /*===== PRICING=========*/
+
+    .pricing-box{
+        margin-bottom: 30px;
+    }
+
+    .contact-head {
+        margin-top: 40px;
+    }
+
+    /*======footer========================================*/
+
+
+    .footer-box {
+        margin-top: 30px;
+    }
+
+
+}
