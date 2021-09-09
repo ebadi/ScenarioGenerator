@@ -10,7 +10,7 @@
 [![ScenarioGenerator](resources/apollo-svl.png)](https://www.youtube.com/watch?v=GOtpSJodlmo&list=PLDs7zRhHsnSQzPShKLLaiLJvybV2HVtAS)
 
 
-If the code helps your research please cite our paper (["Efficient and Effective Generation of Test Cases for Pedestrian Detection – Search-based Software Testing of Baidu Apollo in SVL"](resourcdes/IEEE_AV_Test_Challenge.pdf) ) presented at [AITest 2021 : The IEEE Third International Conference On Artificial Intelligence Testing](http://www.ieeeaitests.com/) in the [Autonomous Driving AI Test Challenge](http://av-test-challenge.org) track.
+If the code helps your research please cite our paper (["Efficient and Effective Generation of Test Cases for Pedestrian Detection – Search-based Software Testing of Baidu Apollo in SVL"](resources/IEEE_AV_Test_Challenge.pdf) ) presented at [AITest 2021 : The IEEE Third International Conference On Artificial Intelligence Testing](http://www.ieeeaitests.com/) in the [Autonomous Driving AI Test Challenge](http://av-test-challenge.org) track.
 
 Find more information about the challenge [in this directory](resources/AITest2021).
 
@@ -81,4 +81,4 @@ INFOTIV AB | RISE Research Institutes of Sweden | CHALMERS | Mälardalen Univers
 ------------ |  ------------  | ------------ | ------------ 
 ![](resources/logos/INFOTIV-logo.png)  | ![](resources/logos/RISE-logo.png)  | ![](resources/logos/CHALMERS-logo.png) | ![](resources/logos/Malardalen-logo.png) 
 
-[ScenarioGenerator](https://github.com/ebadi/ScenarioGenerator) project is started and is currently maintained by Hamid Ebadi.
+[ScenarioGenerator](https://github.com/ebadi/ScenarioGenerator) project is started and is currently maintained by [Hamid Ebadi](https://github.com/ebadi).
