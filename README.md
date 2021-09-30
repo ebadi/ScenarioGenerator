@@ -1,5 +1,10 @@
 # ScenarioGenerator
-*ScenarioGenerator* performs search-based software testing of [Baidu Apollo](https://apollo.auto) by automatic generation of various traffic scenarios in [SVL end-to-end autonomous vehicle.](https://www.svlsimulator.com) to verify and validate the safety functionality of Apollo autonomous systems.
+*ScenarioGenerator* performs search-based software testing of [Baidu Apollo](https://apollo.auto) by automatic generation of various traffic scenarios in [SVL end-to-end autonomous vehicle.](https://www.svlsimulator.com) to verify and validate the safety functionality of Apollo autonomous systems. 
+
+
+If the code helps your research please cite our paper (["Efficient and Effective Generation of Test Cases for Pedestrian Detection – Search-based Software Testing of Baidu Apollo in SVL"](resources/IEEE_AV_Test_Challenge.pdf) ) presented at [AITest 2021 : The IEEE Third International Conference On Artificial Intelligence Testing](http://www.ieeeaitests.com/) in the [Autonomous Driving AI Test Challenge](http://av-test-challenge.org) track.
+
+Find more information about the challenge in this [presentation](resources/presentation.pdf) and [in this directory](resources/AITest2021).
 
 
 - Scenario Creation using SVL editor: [This video demonstrates how `simplePedestrian.json` scenario is created.](https://www.youtube.com/watch?v=4L48mTJo2eo&list=PLDs7zRhHsnSQzPShKLLaiLJvybV2HVtAS)
@@ -10,9 +15,6 @@
 [![ScenarioGenerator](resources/apollo-svl.png)](https://www.youtube.com/watch?v=GOtpSJodlmo&list=PLDs7zRhHsnSQzPShKLLaiLJvybV2HVtAS)
 
 
-If the code helps your research please cite our paper (["Efficient and Effective Generation of Test Cases for Pedestrian Detection – Search-based Software Testing of Baidu Apollo in SVL"](resources/IEEE_AV_Test_Challenge.pdf) ) presented at [AITest 2021 : The IEEE Third International Conference On Artificial Intelligence Testing](http://www.ieeeaitests.com/) in the [Autonomous Driving AI Test Challenge](http://av-test-challenge.org) track.
-
-Find more information about the challenge [in this directory](resources/AITest2021).
 
 
 
