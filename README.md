@@ -14,9 +14,18 @@ Find more information about the challenge in this [presentation](resources/prese
 
 [![ScenarioGenerator](resources/apollo-svl.png)](https://www.youtube.com/watch?v=GOtpSJodlmo&list=PLDs7zRhHsnSQzPShKLLaiLJvybV2HVtAS)
 
+### Credits
 
+If you use [ScenarioGenerator](https://github.com/ebadi/ScenarioGenerator) or got inspired by our paper ([Efficient and Effective Generation of Test Cases for Pedestrian Detection – Search-based Software Testing of Baidu Apollo in SVL](resources/IEEE_AV_Test_Challenge.pdf)), please link to this project and cite our paper.
 
-
+```
+@inproceedings{scenariogenerator,
+  title = {Efficient and Effective Generation of Test Cases for Pedestrian Detection – Search-based Software Testing of Baidu Apollo in SVL},
+  author = {Hamid Ebadi and Mahshid Helali Moghadam and Markus Borg and Gregory Gay and Afonso Fontes and Kasper Socha},
+  booktitle = {IEEE AITest 2021},
+  year = {2021}
+}
+```
 
 
 ## Setup
@@ -54,6 +63,11 @@ usage: ScenarioGenerator.py [-h] -i INPUT --action ACTION
 
 For each scenario, a new JSON file is created in the `results` directory. Take a look at `replay.sh` to get an idea of how to replay these JSON scenario files.
 
+##### Solution for known issues 
+
+- [AttributeError: 'Simulation' object has no attribute 'dv' on some versions of LGSVL-pythonapi](https://github.com/ebadi/ScenarioGenerator/pull/4/files)
+- [Missing genetic_algorithm_minimize.py](https://github.com/ebadi/ScenarioGenerator/issues/2)
+
 
 ##### cleanup.sh script
 
@@ -64,18 +78,7 @@ Remove files and folders in the following directories:
 - Apollo core files
 - `.config/unity3d/LGElectronics/SVLSimulator/Analysis`  & `videos`
 
-### Credits
 
-If you use [ScenarioGenerator](https://github.com/ebadi/ScenarioGenerator) or got inspired by our paper ([Efficient and Effective Generation of Test Cases for Pedestrian Detection – Search-based Software Testing of Baidu Apollo in SVL](resources/IEEE_AV_Test_Challenge.pdf)), please link to this project and cite our paper.
-
-```
-@inproceedings{scenariogenerator,
-  title = {Efficient and Effective Generation of Test Cases for Pedestrian Detection – Search-based Software Testing of Baidu Apollo in SVL},
-  author = {Hamid Ebadi and Mahshid Helali Moghadam and Markus Borg and Gregory Gay and Afonso Fontes and Kasper Socha},
-  booktitle = {IEEE AITest 2021},
-  year = {2021}
-}
-```
 
 This work is done by [Infotiv AB](https://www.infotiv.se) under [VALU3S](https://valu3s.eu) project in a collaboration with [RISE](https://www.ri.se) under [ITEA3](https://itea4.org) European [IVVES](https://itea4.org/project/ivves.html) project. This project has received funding from the [ECSEL](https://www.ecsel.eu) Joint Undertaking (JU) under grant agreement No 876852. The JU receives support from the European Union’s Horizon 2020 research and innovation programme and Austria, Czech Republic, Germany, Ireland, Italy, Portugal, Spain, Sweden, Turkey.
 
