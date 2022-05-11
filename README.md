@@ -67,7 +67,7 @@ For each scenario, a new JSON file is created in the `results` directory. Take a
 
 - [AttributeError: 'Simulation' object has no attribute 'dv' on some versions of LGSVL-pythonapi](https://github.com/ebadi/ScenarioGenerator/pull/4/files)
 - [Missing genetic_algorithm_minimize.py](https://github.com/ebadi/ScenarioGenerator/issues/2)
-
+- [Hardcoded VEHICLE_ID](https://github.com/ebadi/ScenarioGenerator/issues/5)
 
 ##### cleanup.sh script
 
@@ -79,7 +79,7 @@ Remove files and folders in the following directories:
 - `.config/unity3d/LGElectronics/SVLSimulator/Analysis`  & `videos`
 
 
-
+### Funding 
 This work is done by [Infotiv AB](https://www.infotiv.se) under [VALU3S](https://valu3s.eu) project in a collaboration with [RISE](https://www.ri.se) under [ITEA3](https://itea4.org) European [IVVES](https://itea4.org/project/ivves.html) project. This project has received funding from the [ECSEL](https://www.ecsel.eu) Joint Undertaking (JU) under grant agreement No 876852. The JU receives support from the European Union’s Horizon 2020 research and innovation programme and Austria, Czech Republic, Germany, Ireland, Italy, Portugal, Spain, Sweden, Turkey.
 
 The ECSEL JU and the European Commission are not responsible for the content on this website or any use that may be made of the information it contains.
