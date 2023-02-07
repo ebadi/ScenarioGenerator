@@ -213,7 +213,7 @@ class Simulation:
                     wp_angle_z = agent_waypoints[wp_indx]['angle']['z']
                     wp_waittime = agent_waypoints[wp_indx]['waitTime']
                     wp_speed = agent_waypoints[wp_indx]['speed']
-                    waypoints.append(lgsvl.DriveWaypoint(lgsvl.Vector(wp_pos_x, wp_pos_y, wp_pos_z), wp_speed,
+                    waypoints.append(lgsvl.DriveWaypoint(lgsvl.Vector(wp_pos_x, wp_pos_y, wp_pos_z), wp_speed, 0, 
                                                          lgsvl.Vector(wp_angle_x, wp_angle_y, wp_angle_z), 0, False,
                                                          0), )
                 if len(waypoints) > 0:
